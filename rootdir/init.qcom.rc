@@ -142,7 +142,7 @@ on boot
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
-    #sensors log dir
+    # sensors log dir
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
 
@@ -159,7 +159,7 @@ on post-fs-data
     # Create directory for TZ Apps
     mkdir /data/misc/qsee 0770 system system
 
-    #Create folder for mm-qcamera-daemon
+    # Create folder for mm-qcamera-daemon
     mkdir /data/misc/camera 0770 camera camera
 
     mkdir /data/vendor/ramdump 0771 root system
@@ -309,7 +309,8 @@ service qcom-sh /vendor/bin/init.qcom.sh
     group root system radio
     oneshot
 
-service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh class late_start
+service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
+    class late_start
     user root
     group root system wakelock graphics
     disabled
