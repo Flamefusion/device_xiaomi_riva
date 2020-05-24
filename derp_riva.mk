@@ -47,6 +47,7 @@ BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200405.005/6254899:user/release
 # Google Services
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 WITH_GAPPS := false
+TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 
 # DerpFest OFFICIAL
